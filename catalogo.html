@@ -4,6 +4,19 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Biblioteca Virtual - Catálogo</title>
+    <style>
+      nav {
+        background-color: #cccccc;
+        padding: 10px;
+        text-align: center;
+      }
+  
+      nav a {
+        margin: 0 15px;
+        text-decoration: none;
+        color: #333;
+      }
+    </style>
     <link rel="stylesheet" href="estilos.css" />
     <script>
       document.addEventListener("DOMContentLoaded", function () {
@@ -31,66 +44,61 @@
       <h2>catalogo de libros</h2>
       <table>
         <tr><th>Título</th> 
-            <th>Autor</th>
-            <th>Año</th>
-            <th>Disponibilidad</th>
+          <th>Autor</th>
+           <th>Año</th>
+            <th>Disponibilidad</th> 
           </tr>
         <tr><td>El misterio del bosque</td>
-            <td>Laura Martínez</td>
-            <td>2023</td>
+          <td>Laura Martínez</td>
+          <td>2023</td>
           <td>Sí</td></tr>
         <tr><td>Viaje a las estrellas</td>
           <td>Pedro Gonzalez</td>
-            <td>2024</td>
+          <td>2024</td>
           <td>No</td></tr>
         <tr><td>Cien años de soledad</td>
           <td>Gabriel Garcia Marquez</td>
-            <td>1967</td>
+          <td>1967</td>
           <td>Sí</td></tr>
         <tr><td>La casa de los espiritus</td>
-            <td>Isabel Allende</td>
-            <td>1982</td>
+          <td>Isabel Allende</td>
+          <td>1982</td>
           <td>Sí</td></tr>
         <tr><td>El juego del ángel</td>
-            <td>Carlos Ruiz Zafón</td>
-            <td>2008</td>
+          <td>Carlos Ruiz Zafón</td>
+          <td>2008</td>
           <td>No</td></tr>
       </table>
     </section>
     <section id="prestamo">
       <h2>Formulario de Préstamo</h2>
       <form action="#" method="get">
-        <label for="nombre">Nombre completo:</label>
-        <input type="text" id="nombre" name="nombre" required />
-
-        <label for="correo">Correo electrónico:</label>
-        <input type="email" id="correo" name="correo" required />
-
-        <label for="libro">Selecciona un libro:</label>
-        <select id="libro" name="libro">
-          <option value="El misterio del bosque">El misterio del bosque</option>
-          <option value="Viaje a las estrellas">Viaje a las estrellas</option>
-          <option value="Cien años de soledad">Cien años de soledad</option>
-          <option value="La casa de los espíritus">La casa de los espíritus</option>
-          <option value="El juego del ángel">El juego del ángel</option>
-        </select>
-
-        <input type="checkbox" id="normas" name="normas" required />
-        <label for="normas">Acepto las normas de préstamo</label>
-
-        <button type="submit">Solicitar Préstamo</button>
-      </form>
+      <label for="">Nombre completo:</label>
+        <input id="Nombre completo" type="text">
+        <label for="correoElectrónico">Correo electrónico</label>
+        <input id="correoElectrónico" type="email" name="correoElectrónico">
+        <label for="libro">Selecciona un libro</label>
+        <select id="libro">
+          <option>Seleccionar..</option>
+          <option>El misterio del bosque</option>
+          <option>Viaje a las estrellas</option>
+          <option>Cien años de soledad</option>
+          <option>La casa de los espiritus</option>
+          <option>El juego del ángel</option>
+          </select>
+          <input id="Normas prestamo" type="checkbox" />
+          <label for="Normas prestamo">Acepto las normas del préstamo</label>
+          <input type="submit" value="Solicitar préstamo"/>
     </section>
+    <section>
+      <h2>Sobre la biblioteca</h2>
+      <p>Nuestra biblioteca fue fundada en 1980 con el objetivo de fomentar la lectura y el aprendizaje en la comunidad</p>
+      <p>Contamos con miles de libros, revistas y material digital disponible para todos nuestros socios</p>
 
-    <section id="sobre">
-      <h2>Sobre la Biblioteca</h2>
-      <p>Nuestra biblioteca fue fundada en 1980 con el objetivo de fomentar la lectura y el aprendizaje en la comunidad.</p>
-      <p>Contamos con miles de libros, revistas y material digital disponible para todos nuestros socios.</p>
     </section>
-
     <footer>
-      <p>Contacto: info@bibliotecavirtual.com | Teléfono: 123-456-789</p>
-      <p>© 2025 Biblioteca Virtual</p>
+    <p>Contacto: info@bibliotecavirtual.com | Teléfono: 123-456-789</p>
+    <p>© 2025 Biblioteca Virtual</p>
     </footer>
   </body>
 </html>
